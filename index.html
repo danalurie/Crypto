@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+    <link rel="icon" href="assets/image/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6e84bada55.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="jquery-3.6.1.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 id="dynamicHeader"></h1>
+    </header>
+    <nav class="navbar">
+
+        <!-- links to all pages -->
+        <div>
+            <ul class="navbarNav">
+                <li>
+                    <a id="currenciesLink" href="javascript:void(0)">Currencies&nbsp;&nbsp;</a>
+                </li>
+
+                <li>
+                    <a id="reportsLink" href="javascript:void(0)">Reports&nbsp;&nbsp;</a>
+                </li>
+
+                <li>
+                    <a id="aboutLink" href="javascript:void(0)">About</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- search button -->
+        <div class="searchArea">
+            <div class="search-container">
+                <input type="text" name="search" placeholder="Search..." class="search-input">
+                <a href="#" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- currency page -->
+    <div id="contentDiv">
+        <div id="spinner"></div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Your 5 coins: </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <span id="tooManyCoinsAlert"></span>
+                    <button type="button" class="btn btn-primary" id="saveButton">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about page -->
+    <div id="about">
+        <div class="aboutBody">
+            <div class="aboutHeader">
+                <h1>Currency project</h1>
+                <h1>Everything you want to know about cryptocurrency</h1>
+                <p>At this website you will be able to see how much does each coin worth and to see it makes a profit or
+                    loose money- live.</p>
+            </div>
+
+            <div class="aboutRow1-container">
+                <div class="aboutBox box-down cyan">
+                    <h2>crypto-
+                        currency</h2>
+                    <p>Cryptocurrency refers to digital currency or virtual money,
+                        which allows you to transfer funds without intermediaries over the Internet.
+                        you can do it by yourself! Fees are charged as a reward to network participants for
+                        making the network work and are minimal compared to the fees of banks,
+                        financial intermediaries or payment systems.</p>
+                    <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
+                </div>
+
+                <div class="aboutBox red">
+                    <h2>how does it work?</h2>
+                    <p>Cryptocurrency exists solely in the digital records.
+                        This database is called “blockchain” — at blockchain.com you can buy, sell and trade crypto.
+                        The most crucial property of cryptocurrencies is the protection of data and partial anonymity of
+                        users.
+                        Cryptocurrency issuance can be done in several ways and depends on the consensus mechanism.
+                        limited and decreases over time, which maintains the value of the cryptocurrency.</p>
+                    <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
+                </div>
+
+                <div class="aboutBox box-down blue">
+                    <h2>Dana Lurie</h2>
+                    <div class="aboutMyImage">
+                        <img src="assets/image/myImage.jpeg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="aboutRow2-container">
+                <div class="aboutBox orange">
+                    <h2>About me</h2>
+                    <p>My name is Dana and I'm from Tel-Aviv. I am studding Full stack development at John Bryce.</p>
+                    <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="">
+                </div>
+            </div>
+
+            <footer class="aboutFooter">
+                <p class="aboutAttribution">
+                    Coded by
+                    <a href="https://www.linkedin.com/in/dana-lurie-7672a28a/">by Dana Lurie
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- reports page -->
+    <div id="reports"></div>
+
+</body>
+
+</html>
